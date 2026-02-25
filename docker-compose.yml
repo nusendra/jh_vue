@@ -1,0 +1,11 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jhvue
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    labels:
+      - coolify.managed=true
