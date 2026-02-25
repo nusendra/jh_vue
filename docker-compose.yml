@@ -5,13 +5,7 @@ services:
       dockerfile: Dockerfile
     container_name: jhvue
     restart: unless-stopped
-    expose:
-      - "80"
+    ports:
+      - "80:80"
     labels:
       - coolify.managed=true
-    networks:
-      - coolify
-
-networks:
-  coolify:
-    external: true
