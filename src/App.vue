@@ -9,6 +9,7 @@ const count = ref(0)
     <h1>Hello, Vue 3!</h1>
     <p>Count: {{ count }}</p>
     <button @click="count++">Increment</button>
+    <button @click="count--">Decrement</button>
   </main>
 </template>
 
