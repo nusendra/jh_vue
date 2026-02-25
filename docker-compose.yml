@@ -9,3 +9,9 @@ services:
       - "80"
     labels:
       - coolify.managed=true
+    networks:
+      - coolify
+
+networks:
+  coolify:
+    external: true
